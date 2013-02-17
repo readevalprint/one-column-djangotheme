@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 
 {% block title%}
+  {% block meta_title %}
   The Index!
+  {{ block.super }}
+  {% endblock meta_title %}
+  {{ block.super }}
 {% endblock title%}
 
 {% block content %}
